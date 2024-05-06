@@ -10,5 +10,5 @@ import = [
   option_as_alt="Both"
 
 [font]
-  normal={ family="Meslo LG" }
+  normal={ family="MesloLGM Nerd Font" }
   size=15
