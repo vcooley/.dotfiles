@@ -9,3 +9,6 @@ import = [
   dynamic_title=false
   option_as_alt="Both"
 
+[font]
+  normal={ family="Meslo LG" }
+  size=15

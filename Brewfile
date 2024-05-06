@@ -1,3 +1,5 @@
+cask_args appdir: "~/Applications", require_sha: true
+
 brew 'chrome-cli'
 brew 'fribidi'
 brew 'gh'
@@ -6,6 +8,7 @@ brew 'harfbuzz'
 brew 'jesseduffield/lazygit/lazygit'
 brew 'jq'
 brew 'koekeishiya/formulae/skhd'
+# brew 'koekeishiya/formulae/yabai'
 brew 'libffi'
 brew 'libmagic'
 brew 'libxmlsec1'
@@ -21,6 +24,13 @@ brew 'semgrep'
 brew 'wget'
 
 cask '1password'
+cask 'alacritty'
 cask 'raycast'
 cask 'visual-studio-code'
 cask 'vlc'
+
+# fonts
+tap 'homebrew/cask-fonts'
+cask 'font-hack-nerd-font'
+cask 'font-meslo-lg-nerd-font'
+
