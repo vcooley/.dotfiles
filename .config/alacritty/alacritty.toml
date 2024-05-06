@@ -1,0 +1,11 @@
+import = [
+  # "~/.config/alacritty/theme/catppuccin-latte.toml",
+  # "~/.config/alacritty/theme/catppuccin-frappe.toml",
+  "~/.config/alacritty/theme/catppuccin-macchiato.toml",
+  # "~/.config/alacritty/theme/catppuccin-mocha.toml",
+]
+[window]
+  title="DEV WINDOW"
+  dynamic_title=false
+  option_as_alt="Both"
+
