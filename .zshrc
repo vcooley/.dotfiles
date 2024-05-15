@@ -130,7 +130,7 @@ esac
 # Created by `pipx` on 2024-03-03 17:28:24
 export PATH="$PATH:$HOME/.local/bin"
 
-export PATH="$PATH:/usr/local/zig/"
+export PATH="$PATH:/usr/local/bin/zig/"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
