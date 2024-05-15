@@ -114,6 +114,10 @@ return { -- LSP Configuration & Plugins
       },
       ['eslint-lsp'] = {},
       ['js-debug-adapter'] = {},
+
+      -- zig
+      zls = {},
+
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},

@@ -37,16 +37,17 @@ vim.keymap.set('n', 'N', 'Nzz')
 
 -- Escape on kj in insert mode (helpful when using the integrated laptop keyboard and caps lock can't be used as escape)
 vim.keymap.set('i', 'kj', '<Esc>')
+vim.keymap.set('i', 'KJ', '<Esc>') -- sometimes I want to do this when I have caps word on
 
 -- Navigate wrapped lines as if they were file lines
 vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('n', 'j', 'gj')
 
 -- move line/seletion commands
-vim.keymap.set('n', '<C-S-j>', 'V::move .+=<CR>', { desc = 'Move current line down' })
-vim.keymap.set('n', '<C-S-k>', 'V::move .--=<CR>', { desc = 'Move current line up' })
-vim.keymap.set('v', '<C-S-j>', "::move '>+=<CR>gv", { desc = 'Move selected lines down' })
-vim.keymap.set('v', '<C-S-k>', "::move '<--=<CR>gv", { desc = 'Move selected lines up' })
+vim.keymap.set('n', '<M-j>', 'V::move .+=<CR>', { desc = 'Move current line down' })
+vim.keymap.set('n', '<M-k>', 'V::move .--=<CR>', { desc = 'Move current line up' })
+vim.keymap.set('v', '<M-j>', "::move '>+=<CR>gv", { desc = 'Move selected lines down' })
+vim.keymap.set('v', '<M-k>', "::move '<--=<CR>gv", { desc = 'Move selected lines up' })
 
 vim.keymap.set('x', '<leader>p', '"_p', { desc = 'Put and keep original text in unnamed register' })
 vim.keymap.set({ 'n', 'x' }, '<leader>d', '"_d', { desc = 'Delete text to the black hole register' })
