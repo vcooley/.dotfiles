@@ -1,6 +1,6 @@
 return {
   'supermaven-inc/supermaven-nvim',
-  config = function()
-    require('supermaven-nvim').setup {}
-  end,
+  opts = {
+    ignore_filetypes = { zig = true },
+  },
 }

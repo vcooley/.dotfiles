@@ -4,7 +4,12 @@ return {
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    opts = { theme = 'catppuccin' },
+    opts = {
+      theme = 'catppuccin',
+      sections = {
+        lualine_c = { { 'filename', path = 1 } },
+      },
+    },
   },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VeryLazy', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },

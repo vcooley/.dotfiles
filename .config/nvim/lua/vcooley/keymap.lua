@@ -36,8 +36,11 @@ vim.keymap.set('n', 'n', 'nzz')
 vim.keymap.set('n', 'N', 'Nzz')
 
 -- Escape on kj in insert mode (helpful when using the integrated laptop keyboard and caps lock can't be used as escape)
-vim.keymap.set('i', 'kj', '<Esc>')
-vim.keymap.set('i', 'KJ', '<Esc>') -- sometimes I want to do this when I have caps word on
+vim.keymap.set({ 'i', 'c' }, 'kj', '<Esc>')
+-- permutations of the aboce when I have caps word on or press shift accidentally
+vim.keymap.set({ 'i', 'c' }, 'KJ', '<Esc>')
+vim.keymap.set({ 'i', 'c' }, 'kJ', '<Esc>')
+vim.keymap.set({ 'i', 'c' }, 'Kj', '<Esc>')
 
 -- Navigate wrapped lines as if they were file lines
 vim.keymap.set('n', 'k', 'gk')

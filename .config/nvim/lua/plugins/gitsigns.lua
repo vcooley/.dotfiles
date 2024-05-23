@@ -8,9 +8,10 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
   config = function(_, opts)
     local gitsigns = require 'gitsigns'
     gitsigns.setup(opts)
-    vim.keymap.set('n', '<leader>gp', gitsigns.preview_hunk, { desc = '[G]it [P]review change' })
-    vim.keymap.set('n', '<leader>gk', gitsigns.prev_hunk, { desc = '[G]it previous change' })
-    vim.keymap.set('n', '<leader>gj', gitsigns.next_hunk, { desc = '[G]it next change' })
+    vim.keymap.set('n', '<leader>gk', gitsigns.preview_hunk, { desc = '[G]it preview change' })
+    vim.keymap.set('n', '<leader>gp', gitsigns.prev_hunk, { desc = '[G]it [P]revious change' })
+    vim.keymap.set('n', '<leader>gn', gitsigns.next_hunk, { desc = '[G]it [N]ext change' })
+    vim.keymap.set('n', '<leader>gb', gitsigns.blame_line, { desc = '[G]it [B]lame line' })
   end,
   opts = {
     signs = {
