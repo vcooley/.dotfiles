@@ -1,6 +1,11 @@
 return {
   'supermaven-inc/supermaven-nvim',
   opts = {
-    ignore_filetypes = { zig = true },
+    ignore_filetypes = {
+      bin = true,
+      oil = true,
+      text = true,
+      zig = true,
+    },
   },
 }

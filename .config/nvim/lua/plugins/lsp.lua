@@ -116,7 +116,13 @@ return { -- LSP Configuration & Plugins
       ['js-debug-adapter'] = {},
 
       -- zig
-      zls = {},
+      zls = { settings = { zig_exe_path = '/usr/local/bin/zig/zig' } },
+
+      --python
+      pyright = {},
+      black = {},
+      flake8 = {},
+      isort = {},
 
       lua_ls = {
         -- cmd = {...},
