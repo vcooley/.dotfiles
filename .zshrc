@@ -88,16 +88,12 @@ else
 fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dbchrome = 'open -n -a "Google Chrome" "http://localhost:8000" --args --profile=debug-profile --user-data-dir=~/.config/chrome-debug-profile --remote-debugging-port=9222 --window-name=DEBUG'
+alias tp = 'tesorio podman'
+alias tpsd = 'tesorio podman start dashboard'
+alias tpsa = 'tesorio podman start automations'
+alias tppd = 'tesorio podman stop dashboard'
+alias tppa = 'tesorio podman stop automations'
 
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
