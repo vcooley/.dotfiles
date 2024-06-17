@@ -88,7 +88,7 @@ else
 fi
 
 # Compilation flags
-alias dbchrome='open -n -a "Google Chrome" "http://localhost:8000" --args --profile=debug-profile --user-data-dir=~/.config/chrome-debug-profile --remote-debugging-port=9222 --window-name=DEBUG'
+alias dbchrome='open -n -a "Google Chrome" "http://localhost:8000" --args --profile=debug-profile --user-data-dir=$HOME/.config/chrome-debug-profile --remote-debugging-port=9222 --window-name=DEBUG'
 alias tp='tesorio podman'
 alias tpsd='tesorio podman start dashboard'
 alias tpsa='tesorio podman start automations'
