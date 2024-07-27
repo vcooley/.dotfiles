@@ -112,7 +112,9 @@ return { -- LSP Configuration & Plugins
         -- prefer prettier for formatting TS and JS files
         document_formatting = false,
       },
-      ['eslint-lsp'] = {},
+      ['eslint-lsp'] = {
+        -- settings = { run = 'onSave' },
+      },
       ['js-debug-adapter'] = {},
 
       -- zig
