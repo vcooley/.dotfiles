@@ -87,9 +87,10 @@ else
   export EDITOR='nvim'
 fi
 
+# Compilation flags
 alias dbchrome='open -n -a "Google Chrome" "http://localhost:8000" --args --profile=debug-profile --user-data-dir=$HOME/.config/chrome-debug-profile --remote-debugging-port=9222 --window-name=DEBUG'
 alias tp='tesorio podman'
-alias tpc='tesorio podman configure'
+alias tp='tesorio podman'
 alias tpsd='tesorio podman start dashboard'
 alias tpsa='tesorio podman start automations'
 alias tppd='tesorio podman stop dashboard'
@@ -99,6 +100,7 @@ alias tppa='tesorio podman stop automations'
 alias nvd='(cd $HOME/Projects/Dashboard/assets/dashboard; nvim .)'
 alias nvp='(cd $HOME/Projects/Dashboard/assets/pay; nvim .)'
 alias nvD='(cd $HOME/Projects/Dashboard/; nvim .)'
+alias nvgf='nvim $(git ls-files -o -m --exclude-standard)'
 
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
