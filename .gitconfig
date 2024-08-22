@@ -7,3 +7,7 @@
 [user]
 	email = vince.r.cooley@gmail.com
 	name = Vince Cooley
+[rerere]
+	enabled = true
+[push]
+	autoSetupRemote = true

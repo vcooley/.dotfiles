@@ -35,12 +35,12 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzz')
 vim.keymap.set('n', 'N', 'Nzz')
 
--- Escape on kj in insert mode (helpful when using the integrated laptop keyboard and caps lock can't be used as escape)
-vim.keymap.set({ 'i', 'c' }, 'kj', '<Esc>')
+-- Escape on kj in insert mode (helpful when using the integrated laptop keyboard and caps lock is used for ctrl)
+vim.keymap.set({ 'i', 'c' }, 'kj', '<Esc>', { silent = true })
 -- permutations of the above when I have caps word on or press shift accidentally
-vim.keymap.set({ 'i', 'c' }, 'KJ', '<Esc>')
-vim.keymap.set({ 'i', 'c' }, 'kJ', '<Esc>')
-vim.keymap.set({ 'i', 'c' }, 'Kj', '<Esc>')
+vim.keymap.set({ 'i', 'c' }, 'KJ', '<Esc>', { silent = true })
+vim.keymap.set({ 'i', 'c' }, 'kJ', '<Esc>', { silent = true })
+vim.keymap.set({ 'i', 'c' }, 'Kj', '<Esc>', { silent = true })
 
 -- Navigate wrapped lines as if they were file lines
 vim.keymap.set('n', 'k', 'gk')
@@ -55,4 +55,4 @@ vim.keymap.set('v', '<M-k>', "::move '<--=<CR>gv", { desc = 'Move selected lines
 vim.keymap.set('x', '<leader>p', '"_p', { desc = 'Put and keep original text in unnamed register' })
 vim.keymap.set({ 'n', 'x' }, '<leader>d', '"_d', { desc = 'Delete text to the black hole register' })
 
-vim.keymap.set('n', '<leader><Space>w', ':noautocmd w', { desc = 'Save without running automcommands (e.g formatting)' })
+vim.keymap.set('n', '<leader>ww', ':noautocmd w', { desc = 'Save without running automcommands (e.g formatting)' })

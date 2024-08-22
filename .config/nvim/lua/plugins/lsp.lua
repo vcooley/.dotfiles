@@ -19,6 +19,8 @@ return { -- LSP Configuration & Plugins
       },
     },
     { 'folke/neodev.nvim', opts = {} },
+    -- Provide Schemas for JSON and other configuration files
+    { 'b0o/schemastore.nvim' },
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -116,6 +118,14 @@ return { -- LSP Configuration & Plugins
         -- settings = { run = 'onSave' },
       },
       ['js-debug-adapter'] = {},
+      ['jsonls'] = {
+        settings = {
+          json = {
+            schemas = require('schemastore').json.schemas(),
+            validate = { enable = true },
+          },
+        },
+      },
 
       -- zig
       zls = { settings = { zig_exe_path = '/usr/local/bin/zig/zig' } },
