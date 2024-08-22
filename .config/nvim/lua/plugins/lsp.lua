@@ -110,10 +110,16 @@ return { -- LSP Configuration & Plugins
     local servers = {
       -- Some languages (like typescript) have entire language plugins that can be useful:
       --    https://github.com/pmizio/typescript-tools.nvim
-      tsserver = {
-        -- prefer prettier for formatting TS and JS files
+
+      -- Disabled in favor of vtsls.nvim
+      -- tsserver = {
+      --   -- prefer prettier for formatting TS and JS files
+      --   document_formatting = false,
+      -- },
+      vtsls = {
         document_formatting = false,
       },
+
       ['eslint-lsp'] = {
         -- settings = { run = 'onSave' },
       },
