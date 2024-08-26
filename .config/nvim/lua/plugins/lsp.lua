@@ -111,14 +111,16 @@ return { -- LSP Configuration & Plugins
       -- Some languages (like typescript) have entire language plugins that can be useful:
       --    https://github.com/pmizio/typescript-tools.nvim
 
-      -- Disabled in favor of vtsls.nvim
-      -- tsserver = {
-      --   -- prefer prettier for formatting TS and JS files
+      tsserver = {
+        -- prefer prettier for formatting TS and JS files
+        document_formatting = false,
+        -- Trying out ts-tools, which requires a tsserver (which I'm installing in Mason), but needs to be the one to start it.
+        autostart = false,
+      },
+
+      -- vtsls = {
       --   document_formatting = false,
       -- },
-      vtsls = {
-        document_formatting = false,
-      },
 
       ['eslint-lsp'] = {
         -- settings = { run = 'onSave' },
