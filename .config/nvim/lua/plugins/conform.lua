@@ -1,4 +1,5 @@
-return { -- Autoformat
+return {
+  -- Autoformating
   'stevearc/conform.nvim',
   lazy = false,
   keys = {
@@ -21,12 +22,11 @@ return { -- Autoformat
       local disable_filetypes = {
         c = true,
         cpp = true,
+        -- For JS-like files, always user prettier
         javascript = true,
         typescript = true,
         typescriptreact = true,
         javascriptreact = true,
-        json = true,
-        jsonc = true,
       }
 
       return {
@@ -38,13 +38,15 @@ return { -- Autoformat
       lua = { 'stylua' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
-      --
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
       javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
       typescript = { 'prettierd', 'prettier', stop_after_first = true },
       typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
       json = { 'prettierd', 'prettier', stop_after_first = true },
       jsonc = { 'prettierd', 'prettier', stop_after_first = true },
+      yaml = { 'prettierd', 'prettier', stop_after_first = true },
+      html = { 'prettierd', 'prettier', stop_after_first = true },
+      css = { 'prettierd', 'prettier', stop_after_first = true },
     },
   },
 }

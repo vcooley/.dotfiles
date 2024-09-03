@@ -55,4 +55,4 @@ vim.keymap.set('v', '<M-k>', "::move '<--=<CR>gv", { desc = 'Move selected lines
 vim.keymap.set('x', '<leader>p', '"_p', { desc = 'Put and keep original text in unnamed register' })
 vim.keymap.set({ 'n', 'x' }, '<leader>d', '"_d', { desc = 'Delete text to the black hole register' })
 
-vim.keymap.set('n', '<leader>ww', ':noautocmd w', { desc = 'Save without running automcommands (e.g formatting)' })
+vim.keymap.set('n', '<leader>ww', ':noautocmd w<CR>', { desc = 'Save without running automcommands (e.g formatting)' })

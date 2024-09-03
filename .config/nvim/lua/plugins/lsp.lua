@@ -118,12 +118,10 @@ return { -- LSP Configuration & Plugins
         autostart = false,
       },
 
-      -- vtsls = {
-      --   document_formatting = false,
-      -- },
-
-      ['eslint-lsp'] = {
-        -- settings = { run = 'onSave' },
+      eslint = {
+        settings = {
+          codeActionOnSave = { enable = true, mode = 'problems' },
+        },
       },
       ['js-debug-adapter'] = {},
       ['jsonls'] = {
