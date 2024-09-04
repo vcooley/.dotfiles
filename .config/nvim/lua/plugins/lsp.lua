@@ -125,9 +125,6 @@ return { -- LSP Configuration & Plugins
             command = 'EslintFixAll',
           })
         end,
-        settings = {
-          codeActionOnSave = { enable = true, mode = 'problems' },
-        },
       },
       ['js-debug-adapter'] = {},
       ['jsonls'] = {
