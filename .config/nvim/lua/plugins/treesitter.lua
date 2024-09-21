@@ -33,6 +33,7 @@ return {
       'zig',
       'python',
       'csv',
+      'just',
     },
     auto_install = true,
     highlight = {
