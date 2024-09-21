@@ -1,0 +1,6 @@
+# MacOS Config Notes
+For things that are easier to write than script.
+
+## Keyboard
+Using homerow mods, change the keyboard to interpret CTRL as CMD and vice versa.
+This settings can be found in System Settings -> Keyboard -> Keyboard Shortcuts -> Modifier Keys, and is keyboard specific.
