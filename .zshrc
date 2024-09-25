@@ -109,6 +109,18 @@ alias nvgf='nvim $(git ls-files -o -m --exclude-standard)'
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
+# QMK keyboard/keymap management
+# Uses my fork of QMK firmware 
+KEYBOARD='handwired/dactyl_manuform/vcooley/5x7'
+# Uses my external userspace fork via https://github.com/getreuer/qmk-keymap
+KEYMAP='vcooley'
+QMK_USERSPACE="$HOME/Projects/qmk_userspace/"
+KEYMAP_LOCATION="$QMK_USERSPACE/keyboards/$KEYBOARD/keymaps/$KEYMAP"
+# [K]ey[b]oard [c]ompile
+alias kbc="qmk compile -kb $KEYBOARD -km $KEYMAP"
+# [K]ey[b]oard [e]dit
+alias kbe="(cd $QMK_USERSPACE; $EDITOR $KEYMAP_LOCATION)"
+
 # dotfile management assumes a bare git repo in the $HOME/$DOTFILES dir with a working tree of $HOME
 DOTFILES=".dotfiles"
 alias config='/usr/bin/git --git-dir=$HOME/$DOTFILES/ --work-tree=$HOME'
