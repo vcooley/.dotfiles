@@ -21,6 +21,7 @@ brew 'redis'
 brew 'ripgrep'
 brew 'semgrep'
 brew 'tldr'
+brew 'tmux'
 brew 'wget'
 
 cask '1password'
