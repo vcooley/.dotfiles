@@ -15,7 +15,6 @@ brew 'neovim', args: ['HEAD']
 brew 'node'
 brew 'postgresql@14'
 brew 'pre-commit'
-brew 'pyenv'
 brew 'rabbitmq'
 brew 'redis'
 brew 'ripgrep'
