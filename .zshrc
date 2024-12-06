@@ -1,7 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -102,13 +101,6 @@ alias nvp='(cd $HOME/Projects/Dashboard/assets/pay; nvim .)'
 alias nvD='(cd $HOME/Projects/Dashboard/; nvim .)'
 alias nvgf='nvim $(git ls-files -o -m --exclude-standard)'
 
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init --path)"
-
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-
 # QMK keyboard/keymap management
 # Uses my fork of QMK firmware 
 KEYBOARD='handwired/dactyl_manuform/vcooley/5x7'
@@ -126,13 +118,8 @@ DOTFILES=".dotfiles"
 alias config='/usr/bin/git --git-dir=$HOME/$DOTFILES/ --work-tree=$HOME'
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
