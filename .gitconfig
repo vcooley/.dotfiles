@@ -1,15 +1,14 @@
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/local/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/local/bin/gh auth git-credential
 [user]
 	email = vince.r.cooley@gmail.com
 	name = Vince Cooley
+	signingkey = 6B9FF2461132CFF0
 [rerere]
 	enabled = true
 [push]
 	autoSetupRemote = true
 [core]
 	excludesFile = ~/.gitignore
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
