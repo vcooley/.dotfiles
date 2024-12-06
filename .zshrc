@@ -137,3 +137,6 @@ export PATH="$PATH:/usr/local/bin/zig/"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Added by Windsurf
+export PATH="/Users/vince/.codeium/windsurf/bin:$PATH"

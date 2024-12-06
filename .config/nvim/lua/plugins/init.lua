@@ -58,12 +58,5 @@ return {
         -- require('mini.surround').setup()
       end,
     },
-
-    -- {
-    --   dir = '~/Projects/yab.nvim',
-    --   init = function()
-    --     require('yab').setup()
-    --   end,
-    -- },
   },
 }
