@@ -33,6 +33,7 @@ cask 'maccy'
 cask 'nikitabobko/tap/aerospace'
 cask 'notunes'
 cask 'raycast'
+cask 'scroll-reverser'
 cask 'visual-studio-code'
 cask 'vlc'
 

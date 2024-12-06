@@ -1,6 +1,14 @@
 # MacOS Config Notes
-For things that are easier to write than script.
+For things that are easier to write and do through the UI than script.
+
+## Display
+Reduce animations ON in Accessibility -> Display
 
 ## Keyboard
-Using homerow mods, change the keyboard to interpret CTRL as CMD and vice versa.
+- Using homerow mods, change the keyboard to interpret CTRL as CMD and vice versa.
 This settings can be found in System Settings -> Keyboard -> Keyboard Shortcuts -> Modifier Keys, and is keyboard specific.
+
+- Remap caps lock to ctrl in keyboard -> keyboard shortcuts -> Modifier keys
+
+- Remap ctrl to Hyper in Karibiner 
+
