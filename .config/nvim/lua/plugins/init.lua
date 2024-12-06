@@ -59,11 +59,11 @@ return {
       end,
     },
 
-    {
-      dir = '~/Projects/yab.nvim',
-      init = function()
-        require('yab').setup()
-      end,
-    },
+    -- {
+    --   dir = '~/Projects/yab.nvim',
+    --   init = function()
+    --     require('yab').setup()
+    --   end,
+    -- },
   },
 }

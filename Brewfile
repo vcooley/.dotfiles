@@ -28,6 +28,7 @@ cask 'cleanshot'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iterm2'
+cask 'karabiner-elements'
 cask 'lunar'
 cask 'maccy'
 cask 'nikitabobko/tap/aerospace'
@@ -38,7 +39,6 @@ cask 'visual-studio-code'
 cask 'vlc'
 
 # fonts
-tap 'homebrew/cask-fonts'
 cask 'font-hack-nerd-font'
 cask 'font-meslo-lg-nerd-font'
 

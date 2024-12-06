@@ -8,3 +8,9 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
+# Settings for better compatibility with Aerospace
+defaults write com.apple.dock expose-group-apps -bool true && killall Dock
+defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer
+
+
+
