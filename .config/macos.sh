@@ -1,4 +1,4 @@
-#! /usr/local/bin/bash
+#!/bin/bash
 
 # Some users mention the key repeat setting may get clobbered during updates or when modifying other Keyboard settings
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
@@ -16,3 +16,7 @@ defaults write com.apple.spaces spans-displays -bool true && killall SystemUISer
 
 # Disable animations
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
+# Disable press and hold for accented characters, which inhibits holding a key for navigation in vim
+defaults write -g ApplePressAndHoldEnabled -bool false
+
