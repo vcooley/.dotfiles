@@ -4,6 +4,7 @@ return {
     { 'numToStr/Comment.nvim', opts = {} },
     {
       'nvim-lualine/lualine.nvim',
+      cond = not vim.g.vscode,
       dependencies = { 'nvim-tree/nvim-web-devicons' },
       opts = {
         theme = 'catppuccin',
@@ -17,6 +18,7 @@ return {
     -- Useful plugin to show you pending keybinds.
     {
       'folke/which-key.nvim',
+      cond = not vim.g.vscode,
       event = 'VimEnter', -- Sets the loading event to 'VimEnter'
       config = function() -- This is the function that runs, AFTER loading
         require('which-key').setup()
@@ -58,5 +60,8 @@ return {
         -- require('mini.surround').setup()
       end,
     },
+  },
+  {
+    dir = '~/dev/agent-editor',
   },
 }

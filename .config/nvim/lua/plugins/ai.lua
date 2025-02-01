@@ -2,6 +2,7 @@ return {
   {
     'supermaven-inc/supermaven-nvim',
     enabled = false,
+    cond = not vim.g.vscode,
     opts = {
       ignore_filetypes = {
         bin = true,
@@ -14,6 +15,7 @@ return {
   },
   {
     'zbirenbaum/copilot.lua',
+    cond = not vim.g.vscode,
     cmd = 'Copilot',
     event = 'InsertEnter',
     opts = {

@@ -2,6 +2,7 @@ return {
   -- Autoformating
   'stevearc/conform.nvim',
   lazy = false,
+  cond = not vim.g.vscode,
   keys = {
     {
       '<leader>f',

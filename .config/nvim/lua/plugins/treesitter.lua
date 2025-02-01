@@ -1,6 +1,7 @@
 return {
   -- Highlight, edit, and navigate code
   'nvim-treesitter/nvim-treesitter',
+  cond = not vim.g.vscoe,
   build = ':TSUpdate',
   dependencies = {
     'windwp/nvim-ts-autotag',

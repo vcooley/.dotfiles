@@ -8,6 +8,7 @@
 
 return {
   'mfussenegger/nvim-dap',
+  cond = not vim.g.vscode,
   dependencies = {
     -- Creates a beautiful debugger UI
     'rcarriga/nvim-dap-ui',

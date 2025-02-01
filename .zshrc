@@ -95,10 +95,11 @@ alias tpsa='tesorio podman start automations'
 alias tppd='tesorio podman stop dashboard'
 alias tppa='tesorio podman stop automations'
 
+DEV_DIR="dev"
 # cd to the project in a subshell to reduce noise and reduce search results from other projects in the repo
-alias nvd='(cd $HOME/Projects/Dashboard/assets/dashboard; nvim .)'
-alias nvp='(cd $HOME/Projects/Dashboard/assets/pay; nvim .)'
-alias nvD='(cd $HOME/Projects/Dashboard/; nvim .)'
+alias nvd='(cd $HOME/$DEV_DIR/Dashboard/assets/dashboard; nvim .)'
+alias nvp='(cd $HOME/$DEV_DIR/Dashboard/assets/pay; nvim .)'
+alias nvD='(cd $HOME/$DEV_DIR/Dashboard/; nvim .)'
 alias nvgf='nvim $(git ls-files -o -m --exclude-standard)'
 
 # QMK keyboard/keymap management
@@ -106,7 +107,7 @@ alias nvgf='nvim $(git ls-files -o -m --exclude-standard)'
 KEYBOARD='handwired/dactyl_manuform/vcooley/5x7'
 # Uses my external userspace fork via https://github.com/getreuer/qmk-keymap
 KEYMAP='vcooley'
-QMK_USERSPACE="$HOME/Projects/qmk_userspace/"
+QMK_USERSPACE="$HOME/qmk_userspace"
 KEYMAP_LOCATION="$QMK_USERSPACE/keyboards/$KEYBOARD/keymaps/$KEYMAP"
 # [K]ey[b]oard [c]ompile
 alias kbc="qmk compile -kb $KEYBOARD -km $KEYMAP"
@@ -122,7 +123,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
+export PNPM_HOME="/Users/vince/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
