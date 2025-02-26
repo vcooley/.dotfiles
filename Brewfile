@@ -12,6 +12,7 @@ brew 'just'
 brew 'libffi'
 brew 'libmagic'
 brew 'libxmlsec1'
+brew 'luarocks'
 brew 'neovim', args: ['HEAD']
 brew 'node'
 brew 'pnpm@9'
