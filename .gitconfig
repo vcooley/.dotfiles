@@ -6,9 +6,27 @@
 	enabled = true
 [push]
 	autoSetupRemote = true
+	default = simple
+	followTags = true
 [core]
 	excludesFile = ~/.gitignore
 [commit]
 	gpgsign = true
 [tag]
 	gpgSign = true
+    sort = version:refname
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
